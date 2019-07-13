@@ -30,7 +30,7 @@
         <scene sceneID="Q5y-r5-JlM">
             <objects>
                 <tabBarController storyboardIdentifier="tabBarController" id="A4k-fn-Lvl" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="bookmark_outline_24" id="fIW-wt-lzj">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="feed_tab" id="fIW-wt-lzj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -304,12 +304,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="349.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQZ-ut-HwF">
-                                                    <rect key="frame" x="55" y="11" width="80" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hj-CD-brq">
                                                     <rect key="frame" x="22" y="295" width="42" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -359,6 +353,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQZ-ut-HwF">
+                                                    <rect key="frame" x="61" y="11" width="80" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="QrK-03-f5J" firstAttribute="top" secondItem="c0Q-Fw-Ksm" secondAttribute="bottom" constant="3" id="Cis-vf-1kj"/>
@@ -369,7 +369,7 @@
                                                 <constraint firstItem="c0Q-Fw-Ksm" firstAttribute="top" secondItem="mQZ-ut-HwF" secondAttribute="bottom" constant="10" id="dEl-AB-HS8"/>
                                                 <constraint firstItem="4hj-CD-brq" firstAttribute="leading" secondItem="DuD-Tw-D5o" secondAttribute="leading" constant="20" id="dWg-R8-EPP"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mQZ-ut-HwF" secondAttribute="trailing" constant="30" id="e7P-Iw-MJ8"/>
-                                                <constraint firstItem="mQZ-ut-HwF" firstAttribute="leading" secondItem="DuD-Tw-D5o" secondAttribute="leading" constant="38" id="feo-7h-aQu"/>
+                                                <constraint firstItem="mQZ-ut-HwF" firstAttribute="leading" secondItem="DuD-Tw-D5o" secondAttribute="leading" constant="61" id="feo-7h-aQu"/>
                                                 <constraint firstItem="mQZ-ut-HwF" firstAttribute="top" secondItem="DuD-Tw-D5o" secondAttribute="top" constant="11" id="ldY-hQ-nCm"/>
                                                 <constraint firstAttribute="trailing" secondItem="c0Q-Fw-Ksm" secondAttribute="trailing" id="sWN-TW-z2Y"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4hj-CD-brq" secondAttribute="trailing" constant="30" id="xJR-By-I6w"/>
@@ -426,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffa-Nx-Ogk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1430" y="779"/>
+            <point key="canvasLocation" x="1429.5999999999999" y="778.56071964017997"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="WTl-h7-fCr">
@@ -534,7 +534,7 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2M-Ce-H1l">
-                                <rect key="frame" x="146" y="122" width="43" height="21"/>
+                                <rect key="frame" x="149" y="119" width="43" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -556,7 +556,28 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdq-1R-PLe">
-                                <rect key="frame" x="208" y="122" width="73" height="21"/>
+                                <rect key="frame" x="208" y="120" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eL-u1-DOj">
+                                <rect key="frame" x="216" y="97" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZj-qZ-pJk">
+                                <rect key="frame" x="150" y="90" width="42" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bp-gW-Y7o">
+                                <rect key="frame" x="300" y="97" width="51" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -569,16 +590,16 @@
                     <tabBarItem key="tabBarItem" title="Item" id="Pgw-UM-NnO"/>
                     <connections>
                         <outlet property="collectionView" destination="qud-jj-cxS" id="5Oq-bL-tc3"/>
-                        <outlet property="numberFollowers" destination="zdq-1R-PLe" id="hLQ-q4-8OK"/>
-                        <outlet property="numberFollowing" destination="BeJ-AM-buB" id="J3G-xE-6XI"/>
-                        <outlet property="numberPosts" destination="J2M-Ce-H1l" id="jFW-m7-gZY"/>
+                        <outlet property="numberFollowers" destination="2eL-u1-DOj" id="Nrp-jq-L9z"/>
+                        <outlet property="numberFollowing" destination="8Bp-gW-Y7o" id="vVD-KE-SoT"/>
+                        <outlet property="numberPosts" destination="dZj-qZ-pJk" id="Ug8-Vg-2aL"/>
                         <outlet property="profilePicture" destination="rLo-Y4-lyU" id="Kwe-4K-JTO"/>
                         <outlet property="username" destination="a6U-HX-O7b" id="lxt-0n-uMs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whf-AK-pRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2346" y="-1552"/>
+            <point key="canvasLocation" x="2344.8000000000002" y="-1552.1739130434785"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ymG-kH-ntp">
@@ -619,9 +640,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bookmark_outline_24" width="24" height="24"/>
         <image name="bookmark_outline_24-1.5x" width="36" height="36"/>
         <image name="comment_outline_24-1.5x" width="36" height="36"/>
+        <image name="feed_tab" width="25" height="25"/>
         <image name="insta_camera_btn" width="25" height="25"/>
         <image name="instagram" width="2400" height="678"/>
         <image name="likeicon" width="180" height="170"/>

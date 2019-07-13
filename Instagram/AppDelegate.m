@@ -30,7 +30,7 @@
    if (PFUser.currentUser) {
        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 
-        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"Navigation"];
+        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabBarController"];
     }
 
     return YES;

@@ -59,6 +59,8 @@
     }];
     self.username.text = self.user.username;
     self.navigationItem.title = [NSString stringWithFormat:@"@%@", self.user.username];
+    
+    [self fetchPosts];
    }
 
 - (void) fetchPosts{
@@ -70,6 +72,7 @@
         if (posts) {
             self.postArray = posts;
             [self.collectionView reloadData];
+            self.numberPosts.text = [NSString stringWithFormat:@"%lu", (unsigned long)self.postArray.count];
         }
         else {
             NSLog(@"Error");
@@ -118,7 +121,6 @@
         }
         cell.collectionPictureView.image = [UIImage imageWithData:data];
     }];
-    self.numberPosts.text = [NSString stringWithFormat:@"%lu", (unsigned long)self.postArray.count];
     return cell;
 }
 
